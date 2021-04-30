@@ -1,0 +1,28 @@
+.boton{
+    margin-top: 20px;
+}
+
+.form {
+    margin-top: 15px;
+}
+
+.titulo {
+    margin-top: 50px;
+    border-bottom: 2px solid thistle;
+}
+
+
+.ttabla {
+    margin-top: 50px;
+    border-bottom: 2px solid thistle;
+}
+
+.lista {
+    margin-top: 50px;
+    margin-left: 10px;
+    border-bottom: 2px solid thistle;
+}
+
+.table {
+    margin-top: 10px ;
+}

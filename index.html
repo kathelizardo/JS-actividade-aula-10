@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4 - Aula 10</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row">
+   
+            <div class="col-lg-3">
+                <p class="titulo">Registro de Pessoa</p>
+                <form id="registro" class="form">
+                        <div>
+                            <label class="form-label">Nome:</label>
+                            <input type="text" name="nome" class="form-control">
+                        </div>
+
+                        <div>   
+                            <label class="form-label">Sobrenome:</label>
+                            <input type="text" name="sobrenome" class="form-control">
+                        </div>
+                        
+                        <div>
+                            <label class="form-label">Idade:</label>
+                            <input type="number" name="idade" class="form-control">
+                        </div>
+                        
+                        <div>
+                            <label class="form-label">CPF: </label>
+                            <input type="text" name="cpf" class="form-control">            
+                        </div>
+                        
+                        <div>
+                            <label class="form-label">País de origem: </label>
+                            <!-- <input type="text" name="nacionalidade"> -->
+                            <select name="nacionalidade" onChange="selectText(this)" class="form-control">
+                                <option value="0" disabled selected>Select</option>
+                                <option value="1">Venezuela</option>
+                                <option value="2">Brazil</option>
+                                <option value="3">USA</option>
+                                <option value="4">outros</option>
+                            </select>
+                        </div>
+
+                        <div>
+                            <label class="form-label">Ciudade de Residência </label>
+                            <input type="text" name="ciudade" class="form-control">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary boton">Registrar</button>
+                </form>
+            </div>
+
+            <div class="col-lg-6">
+                <p class="ttabla">Dados Pessoas Registradas</p>
+                <table id= resultados class="table">
+                    <thead>
+                        <tr>
+                            <th>Nome</th>
+                            <th>Sobrenome</th>
+                            <th>Idade</th>
+                            <th>CPF</th>
+                            <th>País de Origem</th>
+                            <th>Cidade de Residência</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+
+            <div class="col-lg-3">
+                <p class="lista"> 
+                    Informação de interesse:
+                </p>
+                
+                <ul id= "interes">
+                </ul>
+            </div>
+
+        </div>  
+        
+        
+    </div>  
+
+    
+
+    <script src="registro-dom.js"></script>
+   
+</body>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</html>
